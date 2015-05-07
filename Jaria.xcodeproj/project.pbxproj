@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64BC70A51AFC331D00406512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70A41AFC331D00406512 /* AppDelegate.swift */; };
+		64BC70A81AFC331D00406512 /* Jaria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70A61AFC331D00406512 /* Jaria.xcdatamodeld */; };
+		64BC70AA1AFC331D00406512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70A91AFC331D00406512 /* ViewController.swift */; };
+		64BC70AD1AFC331D00406512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BC70AB1AFC331D00406512 /* Main.storyboard */; };
+		64BC70AF1AFC331D00406512 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BC70AE1AFC331D00406512 /* Images.xcassets */; };
+		64BC70B21AFC331D00406512 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64BC70B01AFC331D00406512 /* LaunchScreen.xib */; };
+		64BC70BE1AFC331E00406512 /* JariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70BD1AFC331E00406512 /* JariaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64BC70B81AFC331D00406512 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BC70971AFC331D00406512 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64BC709E1AFC331D00406512;
+			remoteInfo = Jaria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64BC709F1AFC331D00406512 /* Jaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BC70A31AFC331D00406512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64BC70A41AFC331D00406512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64BC70A71AFC331D00406512 /* Jaria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jaria.xcdatamodel; sourceTree = "<group>"; };
+		64BC70A91AFC331D00406512 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64BC70AC1AFC331D00406512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64BC70AE1AFC331D00406512 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		64BC70B11AFC331D00406512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		64BC70B71AFC331D00406512 /* JariaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JariaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BC70BC1AFC331E00406512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64BC70BD1AFC331E00406512 /* JariaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JariaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64BC709C1AFC331D00406512 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BC70B41AFC331D00406512 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64BC70961AFC331D00406512 = {
+			isa = PBXGroup;
+			children = (
+				64BC70A11AFC331D00406512 /* Jaria */,
+				64BC70BA1AFC331D00406512 /* JariaTests */,
+				64BC70A01AFC331D00406512 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64BC70A01AFC331D00406512 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BC709F1AFC331D00406512 /* Jaria.app */,
+				64BC70B71AFC331D00406512 /* JariaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BC70A11AFC331D00406512 /* Jaria */ = {
+			isa = PBXGroup;
+			children = (
+				64BC70A41AFC331D00406512 /* AppDelegate.swift */,
+				64BC70A91AFC331D00406512 /* ViewController.swift */,
+				64BC70AB1AFC331D00406512 /* Main.storyboard */,
+				64BC70AE1AFC331D00406512 /* Images.xcassets */,
+				64BC70B01AFC331D00406512 /* LaunchScreen.xib */,
+				64BC70A61AFC331D00406512 /* Jaria.xcdatamodeld */,
+				64BC70A21AFC331D00406512 /* Supporting Files */,
+			);
+			path = Jaria;
+			sourceTree = "<group>";
+		};
+		64BC70A21AFC331D00406512 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64BC70A31AFC331D00406512 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64BC70BA1AFC331D00406512 /* JariaTests */ = {
+			isa = PBXGroup;
+			children = (
+				64BC70BD1AFC331E00406512 /* JariaTests.swift */,
+				64BC70BB1AFC331E00406512 /* Supporting Files */,
+			);
+			path = JariaTests;
+			sourceTree = "<group>";
+		};
+		64BC70BB1AFC331E00406512 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64BC70BC1AFC331E00406512 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64BC709E1AFC331D00406512 /* Jaria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BC70C11AFC331E00406512 /* Build configuration list for PBXNativeTarget "Jaria" */;
+			buildPhases = (
+				64BC709B1AFC331D00406512 /* Sources */,
+				64BC709C1AFC331D00406512 /* Frameworks */,
+				64BC709D1AFC331D00406512 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jaria;
+			productName = Jaria;
+			productReference = 64BC709F1AFC331D00406512 /* Jaria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64BC70B61AFC331D00406512 /* JariaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BC70C41AFC331E00406512 /* Build configuration list for PBXNativeTarget "JariaTests" */;
+			buildPhases = (
+				64BC70B31AFC331D00406512 /* Sources */,
+				64BC70B41AFC331D00406512 /* Frameworks */,
+				64BC70B51AFC331D00406512 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64BC70B91AFC331D00406512 /* PBXTargetDependency */,
+			);
+			name = JariaTests;
+			productName = JariaTests;
+			productReference = 64BC70B71AFC331D00406512 /* JariaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64BC70971AFC331D00406512 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Jaria;
+				TargetAttributes = {
+					64BC709E1AFC331D00406512 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					64BC70B61AFC331D00406512 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 64BC709E1AFC331D00406512;
+					};
+				};
+			};
+			buildConfigurationList = 64BC709A1AFC331D00406512 /* Build configuration list for PBXProject "Jaria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64BC70961AFC331D00406512;
+			productRefGroup = 64BC70A01AFC331D00406512 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64BC709E1AFC331D00406512 /* Jaria */,
+				64BC70B61AFC331D00406512 /* JariaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64BC709D1AFC331D00406512 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BC70AD1AFC331D00406512 /* Main.storyboard in Resources */,
+				64BC70B21AFC331D00406512 /* LaunchScreen.xib in Resources */,
+				64BC70AF1AFC331D00406512 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BC70B51AFC331D00406512 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64BC709B1AFC331D00406512 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BC70AA1AFC331D00406512 /* ViewController.swift in Sources */,
+				64BC70A51AFC331D00406512 /* AppDelegate.swift in Sources */,
+				64BC70A81AFC331D00406512 /* Jaria.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BC70B31AFC331D00406512 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BC70BE1AFC331E00406512 /* JariaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64BC70B91AFC331D00406512 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64BC709E1AFC331D00406512 /* Jaria */;
+			targetProxy = 64BC70B81AFC331D00406512 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64BC70AB1AFC331D00406512 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64BC70AC1AFC331D00406512 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64BC70B01AFC331D00406512 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64BC70B11AFC331D00406512 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64BC70BF1AFC331E00406512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64BC70C01AFC331E00406512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64BC70C21AFC331E00406512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jaria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		64BC70C31AFC331E00406512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jaria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		64BC70C51AFC331E00406512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JariaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jaria.app/Jaria";
+			};
+			name = Debug;
+		};
+		64BC70C61AFC331E00406512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JariaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jaria.app/Jaria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64BC709A1AFC331D00406512 /* Build configuration list for PBXProject "Jaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BC70BF1AFC331E00406512 /* Debug */,
+				64BC70C01AFC331E00406512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BC70C11AFC331E00406512 /* Build configuration list for PBXNativeTarget "Jaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BC70C21AFC331E00406512 /* Debug */,
+				64BC70C31AFC331E00406512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64BC70C41AFC331E00406512 /* Build configuration list for PBXNativeTarget "JariaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BC70C51AFC331E00406512 /* Debug */,
+				64BC70C61AFC331E00406512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		64BC70A61AFC331D00406512 /* Jaria.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				64BC70A71AFC331D00406512 /* Jaria.xcdatamodel */,
+			);
+			currentVersion = 64BC70A71AFC331D00406512 /* Jaria.xcdatamodel */;
+			path = Jaria.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 64BC70971AFC331D00406512 /* Project object */;
+}
