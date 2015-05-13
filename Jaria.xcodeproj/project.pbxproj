@@ -22,6 +22,7 @@
 		649CAF3E1B02F4B1004B1185 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649CAF321B02F4B1004B1185 /* Social.framework */; };
 		649CAF3F1B02F4B1004B1185 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649CAF331B02F4B1004B1185 /* StoreKit.framework */; };
 		649CAF401B02F4B1004B1185 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649CAF341B02F4B1004B1185 /* SystemConfiguration.framework */; };
+		649CAF421B033C28004B1185 /* accountview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CAF411B033C28004B1185 /* accountview.swift */; };
 		64BC70A51AFC331D00406512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70A41AFC331D00406512 /* AppDelegate.swift */; };
 		64BC70A81AFC331D00406512 /* Jaria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70A61AFC331D00406512 /* Jaria.xcdatamodeld */; };
 		64BC70AA1AFC331D00406512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC70A91AFC331D00406512 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		649CAF321B02F4B1004B1185 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		649CAF331B02F4B1004B1185 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		649CAF341B02F4B1004B1185 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		649CAF411B033C28004B1185 /* accountview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = accountview.swift; sourceTree = "<group>"; };
 		64BC709F1AFC331D00406512 /* Jaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64BC70A31AFC331D00406512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64BC70A41AFC331D00406512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				64BC70A61AFC331D00406512 /* Jaria.xcdatamodeld */,
 				64BC70A21AFC331D00406512 /* Supporting Files */,
 				64BC70C71AFC371B00406512 /* splash.swift */,
+				649CAF411B033C28004B1185 /* accountview.swift */,
 			);
 			path = Jaria;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				64BC70A51AFC331D00406512 /* AppDelegate.swift in Sources */,
 				64BC70C81AFC371B00406512 /* splash.swift in Sources */,
 				64BC70A81AFC331D00406512 /* Jaria.xcdatamodeld in Sources */,
+				649CAF421B033C28004B1185 /* accountview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

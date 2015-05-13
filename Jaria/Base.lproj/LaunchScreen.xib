@@ -10,11 +10,17 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RcN-rq-Bab">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RcN-rq-Bab">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RcN-rq-Bab" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1I0-Sp-G2Q"/>
+                <constraint firstAttribute="bottom" secondItem="RcN-rq-Bab" secondAttribute="bottom" id="5yg-UY-SzI"/>
+                <constraint firstItem="RcN-rq-Bab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I4P-Lt-hEm"/>
+                <constraint firstAttribute="trailing" secondItem="RcN-rq-Bab" secondAttribute="trailing" id="XwS-8S-PPL"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>

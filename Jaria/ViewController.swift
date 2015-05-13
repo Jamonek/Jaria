@@ -15,11 +15,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         var currentUser = PFUser.currentUser()
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc: UIViewController = storyboard.instantiateViewControllerWithIdentifier("splash") as! UIViewController
-        self.presentViewController(vc, animated: true, completion: nil)
+        if(currentUser == nil) {
+            println("User is nil")
+            // User is not logged in..
+            // Present splash login screen
+            self.performSegueWithIdentifier("splashSeg", sender: self)
+        } else {
+            // User is logged in.. present home view
+            println("User is available")
+        }
     }
 
     override func didReceiveMemoryWarning() {

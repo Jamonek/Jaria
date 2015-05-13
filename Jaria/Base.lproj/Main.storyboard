@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NQ0-yA-OKn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VAP-08-sUn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Donate-->
@@ -23,6 +25,113 @@
             </objects>
             <point key="canvasLocation" x="671" y="667"/>
         </scene>
+        <!--Registration View-->
+        <scene sceneID="bz4-lO-MtE">
+            <objects>
+                <viewController title="Registration View" id="Uhm-x3-G2V" customClass="accountview" customModule="Jaria" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yYw-IK-yrU"/>
+                        <viewControllerLayoutGuide type="bottom" id="FLt-p4-5nf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eba-ZW-yVC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="o0D-XO-52D">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thk-oj-vdI">
+                                <rect key="frame" x="150" y="347" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Aj-gm-nUG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupAction:" destination="Uhm-x3-G2V" eventType="touchUpInside" id="gXw-Ef-GvN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbv-1f-aJJ">
+                                <rect key="frame" x="310" y="347" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="wou-Bz-c6j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="Uhm-x3-G2V" eventType="touchUpInside" id="Xut-Hk-Azl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jaria.nt" translatesAutoresizingMaskIntoConstraints="NO" id="mH8-ko-fiW">
+                                <rect key="frame" x="285" y="28" width="30" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="lLo-g8-KhE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-1f-a5P">
+                                <rect key="frame" x="150" y="289" width="300" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Se-L7-Cwz">
+                                <rect key="frame" x="150" y="231" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4VF-8U-lDV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Google">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JH4-1f-a5P" firstAttribute="top" secondItem="2Se-L7-Cwz" secondAttribute="bottom" constant="8" id="1sW-rc-cdh"/>
+                            <constraint firstItem="o0D-XO-52D" firstAttribute="leading" secondItem="Eba-ZW-yVC" secondAttribute="leading" id="39W-AH-BTV"/>
+                            <constraint firstItem="mH8-ko-fiW" firstAttribute="trailing" secondItem="thk-oj-vdI" secondAttribute="trailing" constant="25" id="45E-bj-iZb"/>
+                            <constraint firstItem="thk-oj-vdI" firstAttribute="top" secondItem="2Se-L7-Cwz" secondAttribute="bottom" constant="66" id="5dH-jw-f81"/>
+                            <constraint firstItem="o0D-XO-52D" firstAttribute="top" secondItem="Eba-ZW-yVC" secondAttribute="top" id="5dL-Ux-RH8"/>
+                            <constraint firstItem="mH8-ko-fiW" firstAttribute="top" secondItem="yYw-IK-yrU" secondAttribute="bottom" constant="8" symbolic="YES" id="76e-Uf-bVX"/>
+                            <constraint firstAttribute="trailing" secondItem="o0D-XO-52D" secondAttribute="trailing" id="Axd-qF-nhz"/>
+                            <constraint firstItem="Lbv-1f-aJJ" firstAttribute="leading" secondItem="thk-oj-vdI" secondAttribute="trailing" constant="20" id="BFM-we-2RX"/>
+                            <constraint firstItem="Lbv-1f-aJJ" firstAttribute="baseline" secondItem="thk-oj-vdI" secondAttribute="firstBaseline" id="Bxe-Ty-1gx"/>
+                            <constraint firstItem="Lbv-1f-aJJ" firstAttribute="top" secondItem="thk-oj-vdI" secondAttribute="top" id="Gdp-O9-d0u"/>
+                            <constraint firstItem="thk-oj-vdI" firstAttribute="baseline" secondItem="Lbv-1f-aJJ" secondAttribute="firstBaseline" id="LEB-VV-RdI"/>
+                            <constraint firstItem="2Se-L7-Cwz" firstAttribute="top" secondItem="mH8-ko-fiW" secondAttribute="bottom" constant="92" id="M2O-iT-xbq"/>
+                            <constraint firstItem="2Se-L7-Cwz" firstAttribute="leading" secondItem="JH4-1f-a5P" secondAttribute="leading" id="Sh8-dc-wRn"/>
+                            <constraint firstItem="FLt-p4-5nf" firstAttribute="top" secondItem="thk-oj-vdI" secondAttribute="bottom" constant="159" id="W1Z-gl-qhW"/>
+                            <constraint firstAttribute="bottom" secondItem="o0D-XO-52D" secondAttribute="bottom" id="YvX-Hx-Ui7"/>
+                            <constraint firstItem="2Se-L7-Cwz" firstAttribute="trailing" secondItem="JH4-1f-a5P" secondAttribute="trailing" id="b8l-qx-rZn"/>
+                            <constraint firstItem="Lbv-1f-aJJ" firstAttribute="trailing" secondItem="JH4-1f-a5P" secondAttribute="trailing" id="e4A-Qf-Ney"/>
+                            <constraint firstItem="thk-oj-vdI" firstAttribute="leading" secondItem="JH4-1f-a5P" secondAttribute="leading" id="jZO-sT-b4B"/>
+                            <constraint firstItem="FLt-p4-5nf" firstAttribute="top" secondItem="JH4-1f-a5P" secondAttribute="bottom" constant="217" id="oDY-Tx-N2F"/>
+                            <constraint firstItem="mH8-ko-fiW" firstAttribute="centerX" secondItem="o0D-XO-52D" secondAttribute="centerX" id="vYF-NF-Dw9"/>
+                            <constraint firstItem="2Se-L7-Cwz" firstAttribute="centerX" secondItem="mH8-ko-fiW" secondAttribute="centerX" id="zNt-6Z-Ulz"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fbButton" destination="JH4-1f-a5P" id="cMq-87-gHg"/>
+                        <outlet property="googleButton" destination="2Se-L7-Cwz" id="wgO-Ll-wcD"/>
+                        <outlet property="loginButton" destination="Lbv-1f-aJJ" id="pcG-xQ-Skq"/>
+                        <outlet property="signupButton" destination="thk-oj-vdI" id="bd0-hg-LVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5B7-kV-ulp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-879"/>
+        </scene>
         <!--Find-->
         <scene sceneID="iwG-bl-krN">
             <objects>
@@ -40,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NF1-w8-miB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="5"/>
+            <point key="canvasLocation" x="615" y="-149"/>
         </scene>
         <!--Splash-->
         <scene sceneID="q3O-Ww-uoX">
@@ -53,12 +162,64 @@
                     <view key="view" contentMode="scaleToFill" id="peG-W4-f5b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="zbu-Z9-8aL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO THE JARIA APP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czK-b7-dIe">
+                                <rect key="frame" x="146" y="359" width="308" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="Jte-hq-WGJ"/>
+                                    <constraint firstAttribute="height" constant="126" id="Rpq-Vh-i46"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="41"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwg-CH-YQS">
+                                <rect key="frame" x="175" y="493" width="250" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="0Ju-ha-kbq"/>
+                                    <constraint firstAttribute="width" constant="250" id="RZt-e2-ast"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Find a Masjid Near You"/>
+                                <connections>
+                                    <action selector="findAction:" destination="VAP-08-sUn" eventType="touchUpInside" id="rQO-YY-uPW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jaria.nt" translatesAutoresizingMaskIntoConstraints="NO" id="hML-Sh-UyG">
+                                <rect key="frame" x="285" y="108" width="30" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DeM-0j-HkV"/>
+                                    <constraint firstAttribute="height" constant="111" id="ctP-Ev-Z82"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Axl-iO-MJ9" firstAttribute="top" secondItem="Xwg-CH-YQS" secondAttribute="bottom" constant="79" id="1c3-9A-3td"/>
+                            <constraint firstItem="zbu-Z9-8aL" firstAttribute="bottom" secondItem="Axl-iO-MJ9" secondAttribute="top" id="Jcd-bi-Vpb"/>
+                            <constraint firstItem="Xwg-CH-YQS" firstAttribute="centerX" secondItem="czK-b7-dIe" secondAttribute="centerX" id="XYb-yN-5ID"/>
+                            <constraint firstItem="zbu-Z9-8aL" firstAttribute="leading" secondItem="peG-W4-f5b" secondAttribute="leading" id="Z4T-9T-lmh"/>
+                            <constraint firstItem="hML-Sh-UyG" firstAttribute="top" secondItem="Tsa-bG-lYG" secondAttribute="bottom" constant="88" id="ZQl-H3-CRR"/>
+                            <constraint firstItem="zbu-Z9-8aL" firstAttribute="centerX" secondItem="hML-Sh-UyG" secondAttribute="centerX" id="afY-zg-5Oc"/>
+                            <constraint firstItem="zbu-Z9-8aL" firstAttribute="top" secondItem="peG-W4-f5b" secondAttribute="top" id="gVJ-AL-qW5"/>
+                            <constraint firstAttribute="trailing" secondItem="zbu-Z9-8aL" secondAttribute="trailing" id="kDj-gl-PFn"/>
+                            <constraint firstItem="czK-b7-dIe" firstAttribute="centerX" secondItem="hML-Sh-UyG" secondAttribute="centerX" id="sa7-hi-DSo"/>
+                            <constraint firstItem="Xwg-CH-YQS" firstAttribute="top" secondItem="czK-b7-dIe" secondAttribute="bottom" constant="8" symbolic="YES" id="y5t-8w-Ei1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImage" destination="zbu-Z9-8aL" id="e1G-Qd-otc"/>
+                        <outlet property="findButton" destination="Xwg-CH-YQS" id="TPZ-pg-7fO"/>
+                        <segue destination="NQ0-yA-OKn" kind="show" identifier="splashSeg" id="SPe-gu-Kjp"/>
+                        <segue destination="Uhm-x3-G2V" kind="showDetail" identifier="accountview" id="g1E-im-j9j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GtH-qa-XGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265" y="-329"/>
+            <point key="canvasLocation" x="-289" y="-525"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="M7L-aZ-TS9">
@@ -120,4 +281,8 @@
             <point key="canvasLocation" x="-103" y="1070"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="540" height="960"/>
+        <image name="jaria.nt" width="84" height="247"/>
+    </resources>
 </document>
