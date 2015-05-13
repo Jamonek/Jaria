@@ -1,0 +1,10 @@
+PODS:
+  - SingleLineShakeAnimation (0.0.2)
+
+DEPENDENCIES:
+  - SingleLineShakeAnimation
+
+SPEC CHECKSUMS:
+  SingleLineShakeAnimation: 7ecfd7ad796a5514a38cb7f0596cd4ef033bda40
+
+COCOAPODS: 0.33.1

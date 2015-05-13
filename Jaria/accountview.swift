@@ -14,7 +14,8 @@ class accountview : UIViewController {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var googleButton: UIButton!
     @IBOutlet var fbButton: UIButton!
-
+    var currentUser = PFUser.currentUser()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,8 +50,19 @@ class accountview : UIViewController {
     }
     
     @IBAction func signupAction(sender: AnyObject) {
+        
+        if(currentUser == nil)
+        {
+            // user is not signed in.. move to sign up segue
+        }
+        
     }
     
     @IBAction func loginAction(sender: AnyObject) {
+        
+        if(currentUser == nil)
+        {
+            // user is not signed in.. move to login segue
+        }
     }
 }
