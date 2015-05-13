@@ -126,11 +126,55 @@
                         <outlet property="googleButton" destination="2Se-L7-Cwz" id="wgO-Ll-wcD"/>
                         <outlet property="loginButton" destination="Lbv-1f-aJJ" id="pcG-xQ-Skq"/>
                         <outlet property="signupButton" destination="thk-oj-vdI" id="bd0-hg-LVc"/>
+                        <segue destination="cm1-Iw-IDu" kind="showDetail" identifier="signupSeg" id="9mA-Fh-UIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5B7-kV-ulp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="-879"/>
+        </scene>
+        <!--Signup View-->
+        <scene sceneID="BW5-2Y-J2r">
+            <objects>
+                <viewController title="Signup View" id="cm1-Iw-IDu" customClass="signup" customModule="Jaria" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b3I-oR-ieR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zbe-l3-fFH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x86-Zk-esa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iwL-r1-adx">
+                                <rect key="frame" x="5" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="OkX-uP-9Jk">
+                                <rect key="frame" x="155" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="c9w-H5-i9V">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c9w-H5-i9V" id="ot4-Ag-fiJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cm1-Iw-IDu" id="ivI-U4-g9x"/>
+                                    <outlet property="delegate" destination="cm1-Iw-IDu" id="eVG-P1-vWi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OkX-uP-9Jk" id="i4m-fU-nnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwp-KX-ZUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-901"/>
         </scene>
         <!--Find-->
         <scene sceneID="iwG-bl-krN">
