@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Donate-->
@@ -145,12 +146,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iwL-r1-adx">
-                                <rect key="frame" x="5" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="OkX-uP-9Jk">
-                                <rect key="frame" x="155" y="150" width="300" height="300"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="OkX-uP-9Jk">
+                                <rect key="frame" x="155" y="150" width="300" height="182"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="uC0-QG-9rO"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="c9w-H5-i9V">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -160,16 +161,24 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="cm1-Iw-IDu" id="ivI-U4-g9x"/>
-                                    <outlet property="delegate" destination="cm1-Iw-IDu" id="eVG-P1-vWi"/>
-                                </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iwL-r1-adx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="centerY" secondItem="iwL-r1-adx" secondAttribute="centerY" constant="-59" id="DUp-84-t1u"/>
+                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="centerX" secondItem="iwL-r1-adx" secondAttribute="centerX" constant="5" id="HN7-PH-Re0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iwL-r1-adx" secondAttribute="trailing" constant="-16" id="HPd-bS-Hak"/>
+                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="top" secondItem="b3I-oR-ieR" secondAttribute="bottom" constant="130" id="LeH-cj-HAR"/>
+                            <constraint firstItem="iwL-r1-adx" firstAttribute="top" secondItem="x86-Zk-esa" secondAttribute="top" id="Q4g-Zn-Hjn"/>
+                            <constraint firstItem="iwL-r1-adx" firstAttribute="leading" secondItem="x86-Zk-esa" secondAttribute="leadingMargin" constant="-16" id="cK3-Bv-mkv"/>
+                            <constraint firstItem="iwL-r1-adx" firstAttribute="bottom" secondItem="Zbe-l3-fFH" secondAttribute="top" id="pHc-GU-mlN"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="OkX-uP-9Jk" id="i4m-fU-nnB"/>
+                        <outlet property="table" destination="OkX-uP-9Jk" id="G31-TO-6iX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwp-KX-ZUW" userLabel="First Responder" sceneMemberID="firstResponder"/>

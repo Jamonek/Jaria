@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         var currentUser = PFUser.currentUser()
         if(currentUser == nil) {
             println("User is nil")
+            // test
             // User is not logged in..
             // Present splash login screen
             self.performSegueWithIdentifier("splashSeg", sender: self)

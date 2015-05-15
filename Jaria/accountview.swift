@@ -54,6 +54,7 @@ class accountview : UIViewController {
         if(currentUser == nil)
         {
             // user is not signed in.. move to sign up segue
+            self.performSegueWithIdentifier("signupSeg", sender: self)
         }
         
     }

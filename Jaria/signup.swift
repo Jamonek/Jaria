@@ -9,12 +9,15 @@
 import UIKit
 import Parse
 
-class signup : UIViewController, UITableViewDataSource, UITableViewDelegate{
-    @IBOutlet var tableView: UITableView!
+class signup : UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        table.dataSource = self
+        table.delegate = self
+        table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
     }
     
@@ -29,11 +32,11 @@ class signup : UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "Send feedback"
+            cell.textLabel?.text = "First Name"
         case 1:
-            cell.textLabel?.text = "General"
+            cell.textLabel?.text = "Last Name"
         case 2:
-            cell.textLabel?.text = "Help"
+            cell.textLabel?.text = "Email"
         default:
             cell.textLabel?.text = "Nothing"
         }
@@ -44,6 +47,10 @@ class signup : UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 65
     }
     
 }
