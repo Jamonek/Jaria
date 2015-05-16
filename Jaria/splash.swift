@@ -27,7 +27,7 @@ class splash: UIViewController {
         
         
         findButton.backgroundColor = UIColor(red: 0.56, green:0.11, blue:0.04, alpha:1.0)
-        findButton.layer.cornerRadius = 5
+        findButton.layer.cornerRadius = 7
 //        findButton.layer.borderWidth = 1
 //        findButton.layer.borderColor = UIColor.whiteColor().CGColor
     }
