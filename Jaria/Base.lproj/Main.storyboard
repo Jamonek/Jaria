@@ -4,7 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Donate-->
@@ -150,7 +149,7 @@
                                 <rect key="frame" x="155" y="150" width="300" height="182"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="uC0-QG-9rO"/>
+                                    <constraint firstAttribute="width" constant="300" id="7pl-Cb-mRR"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="c9w-H5-i9V">
@@ -168,13 +167,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="centerY" secondItem="iwL-r1-adx" secondAttribute="centerY" constant="-59" id="DUp-84-t1u"/>
-                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="centerX" secondItem="iwL-r1-adx" secondAttribute="centerX" constant="5" id="HN7-PH-Re0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iwL-r1-adx" secondAttribute="trailing" constant="-16" id="HPd-bS-Hak"/>
-                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="top" secondItem="b3I-oR-ieR" secondAttribute="bottom" constant="130" id="LeH-cj-HAR"/>
-                            <constraint firstItem="iwL-r1-adx" firstAttribute="top" secondItem="x86-Zk-esa" secondAttribute="top" id="Q4g-Zn-Hjn"/>
-                            <constraint firstItem="iwL-r1-adx" firstAttribute="leading" secondItem="x86-Zk-esa" secondAttribute="leadingMargin" constant="-16" id="cK3-Bv-mkv"/>
-                            <constraint firstItem="iwL-r1-adx" firstAttribute="bottom" secondItem="Zbe-l3-fFH" secondAttribute="top" id="pHc-GU-mlN"/>
+                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="leading" secondItem="x86-Zk-esa" secondAttribute="leading" constant="155" id="7F9-oY-9sN"/>
+                            <constraint firstItem="iwL-r1-adx" firstAttribute="bottom" secondItem="Zbe-l3-fFH" secondAttribute="top" id="G27-65-RV5"/>
+                            <constraint firstItem="iwL-r1-adx" firstAttribute="leading" secondItem="x86-Zk-esa" secondAttribute="leading" id="XgG-Kw-ksn"/>
+                            <constraint firstItem="OkX-uP-9Jk" firstAttribute="top" secondItem="b3I-oR-ieR" secondAttribute="bottom" constant="130" id="asR-gw-QUA"/>
+                            <constraint firstItem="Zbe-l3-fFH" firstAttribute="top" secondItem="OkX-uP-9Jk" secondAttribute="bottom" constant="268" id="gPV-Io-owA"/>
+                            <constraint firstItem="iwL-r1-adx" firstAttribute="top" secondItem="x86-Zk-esa" secondAttribute="top" id="xbZ-JM-Tgw"/>
+                            <constraint firstAttribute="trailing" secondItem="iwL-r1-adx" secondAttribute="trailing" id="xh1-n2-kCg"/>
                         </constraints>
                     </view>
                     <connections>
