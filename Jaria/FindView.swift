@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class FindView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         var currentUser = PFUser.currentUser()
         if(currentUser == nil) {
             println("User is nil")
-            // test
             // User is not logged in..
             // Present splash login screen
             self.performSegueWithIdentifier("splashSeg", sender: self)

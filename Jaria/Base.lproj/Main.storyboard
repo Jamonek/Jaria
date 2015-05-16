@@ -188,7 +188,7 @@
         <!--Find-->
         <scene sceneID="iwG-bl-krN">
             <objects>
-                <viewController id="Ta9-cz-VzJ" customClass="ViewController" customModule="Jaria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ta9-cz-VzJ" customClass="FindView" customModule="Jaria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4UZ-J5-MBV"/>
                         <viewControllerLayoutGuide type="bottom" id="aFn-X5-ytb"/>
