@@ -107,7 +107,7 @@ class accountview : UIViewController {
                     }
                 })
             }
-            
+            self.performSegueWithIdentifier("regToMain", sender: self)
         }
     }
     

@@ -14,20 +14,11 @@ class FindView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.navigationItem.hidesBackButton = true
     }
     
     override func viewDidAppear(animated: Bool) {
-        var currentUser = PFUser.currentUser()
-        if(currentUser == nil) {
-            println("User is nil")
-            // User is not logged in..
-            // Present splash login screen
-            self.performSegueWithIdentifier("splashSeg", sender: self)
-        } else {
-            // User is logged in.. present home view
-            println("User is available")
-        }
+        
     }
 
     override func didReceiveMemoryWarning() {

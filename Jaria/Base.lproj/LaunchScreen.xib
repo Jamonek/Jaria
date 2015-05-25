@@ -13,10 +13,22 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="EfB-gd-wLq">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jaria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGg-Zl-xCP">
+                    <rect key="frame" x="143" y="351" width="194" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="194" id="K7L-kj-E94"/>
+                        <constraint firstAttribute="height" constant="83" id="i1D-BW-W51"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
+                    <color key="textColor" red="0.55291193181818188" green="0.55291193181818188" blue="0.55291193181818188" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="EfB-gd-wLq" secondAttribute="trailing" id="BMO-X3-Cox"/>
+                <constraint firstItem="tGg-Zl-xCP" firstAttribute="centerX" secondItem="EfB-gd-wLq" secondAttribute="centerX" id="Hoo-ri-kRl"/>
                 <constraint firstItem="EfB-gd-wLq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZfO-e1-kHq"/>
+                <constraint firstAttribute="bottom" secondItem="tGg-Zl-xCP" secondAttribute="bottom" constant="46" id="eOV-8j-J1d"/>
                 <constraint firstItem="EfB-gd-wLq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t6H-cM-pg0"/>
                 <constraint firstAttribute="bottom" secondItem="EfB-gd-wLq" secondAttribute="bottom" id="xDc-BT-LKV"/>
             </constraints>

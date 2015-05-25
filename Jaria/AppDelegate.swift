@@ -25,7 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics()])
         
         PFTwitterUtils.initializeWithConsumerKey("kQyqfllImbfyXikV9LyD7eUJ6",  consumerSecret:"dGivSQBF9ygDe6Ksr96YE4qfAFj0OS6hYRvIksp2dxyjeLfZXt")
-
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor() ], forState: .Selected)
+        
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
         return true
     }
 

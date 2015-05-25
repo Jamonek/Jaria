@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Donate" id="8YM-0s-XXa"/>
+                    <tabBarItem key="tabBarItem" title="Donate" image="donate" id="8YM-0s-XXa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8U4-1e-JhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Find" id="MoJ-cp-6wv"/>
+                    <tabBarItem key="tabBarItem" title="Find" image="locpin" id="MoJ-cp-6wv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NF1-w8-miB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,7 +266,7 @@
                     <connections>
                         <outlet property="bgImage" destination="zbu-Z9-8aL" id="e1G-Qd-otc"/>
                         <outlet property="findButton" destination="Xwg-CH-YQS" id="TPZ-pg-7fO"/>
-                        <segue destination="NQ0-yA-OKn" kind="show" identifier="splashSeg" id="SPe-gu-Kjp"/>
+                        <segue destination="NQ0-yA-OKn" kind="showDetail" identifier="splashSeg" id="SPe-gu-Kjp"/>
                         <segue destination="WGO-lR-MT0" kind="show" identifier="accountview" id="g1E-im-j9j"/>
                     </connections>
                 </viewController>
@@ -282,7 +282,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="MIW-Qz-qHD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ta9-cz-VzJ" kind="relationship" relationship="viewControllers" id="aZg-HS-NPO"/>
@@ -314,10 +316,10 @@
             </objects>
             <point key="canvasLocation" x="-566" y="1154"/>
         </scene>
-        <!--Salat-->
+        <!--Prayer Times-->
         <scene sceneID="TlQ-lo-eR5">
             <objects>
-                <viewController id="8oO-s6-Xsy" sceneMemberID="viewController">
+                <viewController title="Prayer Times" id="8oO-s6-Xsy" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V3z-7W-rmw"/>
                         <viewControllerLayoutGuide type="bottom" id="CwG-11-ynP"/>
@@ -327,7 +329,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Salat" id="J4P-nc-LVe"/>
+                    <tabBarItem key="tabBarItem" title="Prayer Times" image="clock" id="J4P-nc-LVe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAc-GP-mrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -525,9 +527,12 @@
     </scenes>
     <resources>
         <image name="bg2" width="320" height="568"/>
+        <image name="clock" width="25" height="25"/>
+        <image name="donate" width="25" height="25"/>
         <image name="jaria.nt" width="84" height="247"/>
+        <image name="locpin" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="okL-qf-yea"/>
+        <segue reference="SPe-gu-Kjp"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,7 @@ class splash: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // blur the image
 //        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
 //        var blurView = UIVisualEffectView(effect: blur)
@@ -37,7 +38,11 @@ class splash: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+        var user = PFUser.currentUser()
+        if user != nil {
+            // send to main view segue since user is logged in
+            self.performSegueWithIdentifier("splashSeg", sender: self)
+        }
         
     }
     
