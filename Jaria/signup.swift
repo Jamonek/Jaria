@@ -18,7 +18,6 @@ class signup : UITableViewController, UITextFieldDelegate {
     @IBOutlet var password: UITextField!
     @IBOutlet var phoneNumber: UITextField!
     @IBOutlet var message: UILabel!
-    let user = PFUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +69,7 @@ class signup : UITableViewController, UITextFieldDelegate {
         
         
         if !stopSignup {
+            let user = PFUser()
             user.username = email.text
             user.email = email.text
             user.password = password.text
@@ -79,8 +79,7 @@ class signup : UITableViewController, UITextFieldDelegate {
             user.signUpInBackgroundWithBlock {
                 (succeeded: Bool, error: NSError?) -> Void in
                 if error == nil {
-                    // Hooray! Let them use the app now.
-                    self.performSegueWithIdentifier("signInShowTab", sender: self)
+                        self.performSegueWithIdentifier("signInShowTab", sender: self)
                 } else {
                     // Examine the error object and inform the user.
                     self.message.text = "There was an error during registration."

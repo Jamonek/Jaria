@@ -84,6 +84,7 @@ class accountview : UIViewController {
                     if user.isNew {
                         // Push to Alternate sign up view to complete details
                         println("User signed up and logged in with Twitter!")
+                        self.performSegueWithIdentifier("signupSegTwit", sender: self)
                     } else {
                         // Push to Main segue
                         println("User logged in with Twitter!")
@@ -98,6 +99,14 @@ class accountview : UIViewController {
         } else {
             // User is logged in, 
             // link account to twitter
+            if !PFTwitterUtils.isLinkedWithUser(PFUser.currentUser()) {
+                PFTwitterUtils.linkUser(PFUser.currentUser()!, block: {(succeeded: Bool, error: NSError?) -> Void in
+                    if PFTwitterUtils.isLinkedWithUser(currentUser) {
+                        println("Woohoo, user logged in with Twitter!")
+                        self.performSegueWithIdentifier("regToMain", sender: self)
+                    }
+                })
+            }
             
         }
     }
@@ -105,4 +114,11 @@ class accountview : UIViewController {
     @IBAction func facebookLogin(sender: AnyObject) {
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.identifier == "signupSegTwit") {
+            
+            // not needed yet
+        }
+    }
 }

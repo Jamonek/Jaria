@@ -135,6 +135,7 @@
                         <outlet property="loginButton" destination="Lbv-1f-aJJ" id="pcG-xQ-Skq"/>
                         <outlet property="signupButton" destination="thk-oj-vdI" id="bd0-hg-LVc"/>
                         <segue destination="7ys-1G-vpw" kind="show" identifier="signupSeg" id="9mA-Fh-UIY"/>
+                        <segue destination="ZVA-c5-eLx" kind="show" identifier="signupSegTwit" id="wQ0-2X-mY8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5B7-kV-ulp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,6 +160,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NF1-w8-miB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1727" y="291"/>
+        </scene>
+        <!--Twitter sign up continued-->
+        <scene sceneID="X5H-zO-KBE">
+            <objects>
+                <tableViewController title="Twitter sign up continued" id="ZVA-c5-eLx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bMw-Oe-MLB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Twitter Registration" id="3gN-7E-z8v">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ueN-yO-tio">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ueN-yO-tio" id="mo3-Se-QoS">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OM5-Vf-oa9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OM5-Vf-oa9" id="F5M-HO-rWY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RGq-j9-xwb">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RGq-j9-xwb" id="0oJ-QF-5MB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ZVA-c5-eLx" id="Isy-Rl-kMk"/>
+                            <outlet property="delegate" destination="ZVA-c5-eLx" id="1QO-qQ-ppO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaK-FM-tjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="153"/>
         </scene>
         <!--Splash-->
         <scene sceneID="q3O-Ww-uoX">
