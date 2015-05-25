@@ -8,49 +8,118 @@
 
 import UIKit
 import Parse
+import SingleLineShakeAnimation
 
-class signup : UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var table: UITableView!
+class signup : UITableViewController, UITextFieldDelegate {
+    @IBOutlet var signupBtn: UIButton!
+    @IBOutlet var firstName: UITextField!
+    @IBOutlet var lastName: UITextField!
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var phoneNumber: UITextField!
+    @IBOutlet var message: UILabel!
+    let user = PFUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Sign Up"
         
-        table.dataSource = self
-        table.delegate = self
-        table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        signupBtn.backgroundColor = UIColor.clearColor()
+        signupBtn.layer.cornerRadius = 5
+        signupBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        signupBtn.layer.borderWidth = 1
+        signupBtn.layer.masksToBounds = true
+        signupBtn.frame.size.height = 55
+        signupBtn.frame.size.width = 150
         
+        firstName.delegate = self
+        lastName.delegate = self
+        email.delegate = self
+        password.delegate = self
+        phoneNumber.delegate = self
+    
     }
     
-    // Table View Data Source methods
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+    @IBAction func signupSubmit(sender: AnyObject) {
+        var stopSignup : Bool = false
         
-        switch indexPath.row {
-        case 0:
-            cell.textLabel?.text = "First Name"
-        case 1:
-            cell.textLabel?.text = "Last Name"
-        case 2:
-            cell.textLabel?.text = "Email"
-        default:
-            cell.textLabel?.text = "Nothing"
+        if firstName.text.isEmpty {
+            firstName.shake(ShakeDirection.Horizontal)
+            stopSignup = true
         }
-        return cell
+        
+        if lastName.text.isEmpty {
+            lastName.shake(ShakeDirection.Horizontal)
+            stopSignup = true
+        }
+        
+        if email.text.isEmpty {
+         email.shake(ShakeDirection.Horizontal)
+            stopSignup = true
+        }
+        
+        if password.text.isEmpty {
+            password.shake(ShakeDirection.Horizontal)
+            stopSignup = true
+        }
+        
+        if phoneNumber.text.isEmpty {
+            phoneNumber.shake(ShakeDirection.Horizontal)
+            stopSignup = true
+        }
+        
+        
+        if !stopSignup {
+            user.username = email.text
+            user.email = email.text
+            user.password = password.text
+            user["firstName"] = firstName.text
+            user["lastName"] = lastName.text
+            user["phoneNumber"] = phoneNumber.text
+            user.signUpInBackgroundWithBlock {
+                (succeeded: Bool, error: NSError?) -> Void in
+                if error == nil {
+                    // Hooray! Let them use the app now.
+                    self.performSegueWithIdentifier("signInShowTab", sender: self)
+                } else {
+                    // Examine the error object and inform the user.
+                    self.message.text = "There was an error during registration."
+                }
+            }
+        } else {
+            self.message.text = "There was a missing field."
+        }
     }
     
-    // Table View Delegate methods
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        switch textField {
+        case self.firstName:
+            lastName.becomeFirstResponder()
+        case self.lastName:
+            email.becomeFirstResponder()
+        case self.email:
+            password.becomeFirstResponder()
+        case self.password:
+            phoneNumber.becomeFirstResponder()
+        case self.phoneNumber:
+            phoneNumber.resignFirstResponder()
+            // submit data
+        default:
+            textField.resignFirstResponder()
+            
+        }
+        return true
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 65
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
+            // 
+            firstName.resignFirstResponder()
+            lastName.resignFirstResponder()
+            email.resignFirstResponder()
+            password.resignFirstResponder()
+            phoneNumber.resignFirstResponder()
+        }
+        super.touchesBegan(touches , withEvent:event)
     }
-    
 }

@@ -16,20 +16,22 @@ class splash: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // blur the image
-        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        var blurView = UIVisualEffectView(effect: blur)
-        blurView.frame = bgImage.bounds
-        bgImage.addSubview(blurView)
+//        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
+//        var blurView = UIVisualEffectView(effect: blur)
+//        blurView.frame = bgImage.bounds
+//        bgImage.addSubview(blurView)
+//        
+//        let vibrancyEffect = UIVibrancyEffect(forBlurEffect: blur)
+//        let vibrancyView = UIVisualEffectView(effect: vibrancyEffect)
+//        blurView.contentView.addSubview(vibrancyView)
         
-        let vibrancyEffect = UIVibrancyEffect(forBlurEffect: blur)
-        let vibrancyView = UIVisualEffectView(effect: vibrancyEffect)
-        blurView.contentView.addSubview(vibrancyView)
         
-        
-        findButton.backgroundColor = UIColor(red: 0.56, green:0.11, blue:0.04, alpha:1.0)
+        findButton.backgroundColor = UIColor(red: 0.13, green:0.22, blue:0.30, alpha:1.0)
         findButton.layer.cornerRadius = 7
 //        findButton.layer.borderWidth = 1
 //        findButton.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        self.navigationItem.hidesBackButton = false
     }
     
     override func viewDidAppear(animated: Bool) {

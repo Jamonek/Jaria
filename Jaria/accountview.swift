@@ -14,7 +14,6 @@ class accountview : UIViewController {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var googleButton: UIButton!
     @IBOutlet var fbButton: UIButton!
-    var currentUser = PFUser.currentUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,23 +46,63 @@ class accountview : UIViewController {
         fbButton.layer.borderColor = UIColor.clearColor().CGColor
         fbButton.layer.borderWidth = 1
         fbButton.layer.masksToBounds = true
+        
+        self.navigationItem.hidesBackButton = false
     }
     
     @IBAction func signupAction(sender: AnyObject) {
-        
+        var currentUser = PFUser.currentUser()
         if(currentUser == nil)
         {
             // user is not signed in.. move to sign up segue
             self.performSegueWithIdentifier("signupSeg", sender: self)
+        } else {
+            self.performSegueWithIdentifier("regToMain", sender: self)
         }
         
     }
     
     @IBAction func loginAction(sender: AnyObject) {
-        
+        var currentUser = PFUser.currentUser()
         if(currentUser == nil)
         {
             // user is not signed in.. move to login segue
+        } else {
+            self.performSegueWithIdentifier("regToMain", sender: self)
         }
     }
+    
+    @IBAction func twitterLogin(sender: AnyObject) {
+        var currentUser = PFUser.currentUser()
+        if currentUser == nil
+        {
+            // User is not logged in.. 
+            // Login with Twitter
+            PFTwitterUtils.logInWithBlock {
+                (user: PFUser?, error: NSError?) -> Void in
+                if let user = user {
+                    if user.isNew {
+                        // Push to Alternate sign up view to complete details
+                        println("User signed up and logged in with Twitter!")
+                    } else {
+                        // Push to Main segue
+                        println("User logged in with Twitter!")
+                         self.performSegueWithIdentifier("regToMain", sender: self)
+                    }
+                } else {
+                    // figure this out..
+                    println("Uh oh. The user cancelled the Twitter login.")
+                }
+            }
+            
+        } else {
+            // User is logged in, 
+            // link account to twitter
+            
+        }
+    }
+    
+    @IBAction func facebookLogin(sender: AnyObject) {
+    }
+    
 }
